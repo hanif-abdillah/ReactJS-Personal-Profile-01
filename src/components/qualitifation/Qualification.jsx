@@ -10,163 +10,156 @@ const Qualification = () => {
     }
 
     return (
-        <div
-            data-aos="fade-up"
-            data-aos-offset="200"
-            data-aos-delay="400"
-            data-aos-duration="1000"
-        >
-            <section className="qualification section" id='qualification'>
-                <h2 className="section__title">Qualification</h2>
-                <span className="section__subtitle">My Personal Journey</span>
+        <section className="qualification section" id='qualification'>
+            <h2 className="section__title">Qualification</h2>
+            <span className="section__subtitle">My Personal Journey</span>
 
-                <div className="qualification__container container">
-                    <div className="qualification__tabs">
-                        <div className={toggleState === 1 ? "qualification__button qualification__active button--flex" : "qualification__button button--flex"} onClick={() => toggleTab(1)} >
-                            <i className="uil uil-graduation-cap qualification__icon"></i> Education
+            <div className="qualification__container container">
+                <div className="qualification__tabs">
+                    <div className={toggleState === 1 ? "qualification__button qualification__active button--flex" : "qualification__button button--flex"} onClick={() => toggleTab(1)} >
+                        <i className="uil uil-graduation-cap qualification__icon"></i> Education
+                    </div>
+
+                    <div className={toggleState === 2 ? "qualification__button qualification__active button--flex" : "qualification__button button--flex"} onClick={() => toggleTab(2)}>
+                        <i className="uil uil-briefcase-alt qualification__icon"></i> Experience
+                    </div>
+                </div>
+
+                <div className="qualification__sections">
+                    <div className={toggleState === 1 ? "qualification__content qualification__content-active" : "qualification__content"}>
+                        <div className="qualification__data">
+                            <div>
+                                <h3 className="qualification__title">Computer Technology</h3>
+                                <span className="qualification__subtitle">Digital Technology of Indonesia University</span>
+                                <div className="qualification__calendar">
+                                    <i className="uil uil-calendar-alt"></i> 2021 - Present
+                                </div>
+                            </div>
+
+                            <div>
+                                <span className="qualification__rounder"></span>
+                                <span className="qualification__line"></span>
+                            </div>
                         </div>
 
-                        <div className={toggleState === 2 ? "qualification__button qualification__active button--flex" : "qualification__button button--flex"} onClick={() => toggleTab(2)}>
-                            <i className="uil uil-briefcase-alt qualification__icon"></i> Experience
+                        <div className="qualification__data">
+                            <div></div>
+
+                            <div>
+                                <span className="qualification__rounder"></span>
+                                <span className="qualification__line"></span>
+                            </div>
+
+                            <div>
+                                <h3 className="qualification__title">Art Director</h3>
+                                <span className="qualification__subtitle">Digital Technology of Indonesia University</span>
+                                <div className="qualification__calendar">
+                                    <i className="uil uil-calendar-alt"></i> 2021 - Present
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="qualification__data">
+                            <div>
+                                <h3 className="qualification__title">Web Development</h3>
+                                <span className="qualification__subtitle">Digital Technology of Indonesia University</span>
+                                <div className="qualification__calendar">
+                                    <i className="uil uil-calendar-alt"></i> 2021 - Present
+                                </div>
+                            </div>
+
+                            <div>
+                                <span className="qualification__rounder"></span>
+                                <span className="qualification__line"></span>
+                            </div>
+                        </div>
+
+                        <div className="qualification__data">
+                            <div></div>
+
+                            <div>
+                                <span className="qualification__rounder"></span>
+                                <span className="qualification__line"></span>
+                            </div>
+
+                            <div>
+                                <h3 className="qualification__title">UX Expert</h3>
+                                <span className="qualification__subtitle">Digital Technology of Indonesia University</span>
+                                <div className="qualification__calendar">
+                                    <i className="uil uil-calendar-alt"></i> 2099 - 3000
+                                </div>
+                            </div>
                         </div>
                     </div>
 
-                    <div className="qualification__sections">
-                        <div className={toggleState === 1 ? "qualification__content qualification__content-active" : "qualification__content"}>
-                            <div className="qualification__data">
-                                <div>
-                                    <h3 className="qualification__title">Computer Technology</h3>
-                                    <span className="qualification__subtitle">Digital Technology of Indonesia University</span>
-                                    <div className="qualification__calendar">
-                                        <i className="uil uil-calendar-alt"></i> 2021 - Present
-                                    </div>
-                                </div>
-
-                                <div>
-                                    <span className="qualification__rounder"></span>
-                                    <span className="qualification__line"></span>
+                    <div className={toggleState === 2 ? "qualification__content qualification__content-active" : "qualification__content"}>
+                        <div className="qualification__data">
+                            <div>
+                                <h3 className="qualification__title">Odoo Developer</h3>
+                                <span className="qualification__subtitle">PT Dua Empat Tujuh</span>
+                                <div className="qualification__calendar">
+                                    <i className="uil uil-calendar-alt"></i> August - December 2023
                                 </div>
                             </div>
 
-                            <div className="qualification__data">
-                                <div></div>
+                            <div>
+                                <span className="qualification__rounder"></span>
+                                <span className="qualification__line"></span>
+                            </div>
+                        </div>
 
-                                <div>
-                                    <span className="qualification__rounder"></span>
-                                    <span className="qualification__line"></span>
-                                </div>
+                        <div className="qualification__data">
+                            <div></div>
 
-                                <div>
-                                    <h3 className="qualification__title">Art Director</h3>
-                                    <span className="qualification__subtitle">Digital Technology of Indonesia University</span>
-                                    <div className="qualification__calendar">
-                                        <i className="uil uil-calendar-alt"></i> 2021 - Present
-                                    </div>
-                                </div>
+                            <div>
+                                <span className="qualification__rounder"></span>
+                                <span className="qualification__line"></span>
                             </div>
 
-                            <div className="qualification__data">
-                                <div>
-                                    <h3 className="qualification__title">Web Development</h3>
-                                    <span className="qualification__subtitle">Digital Technology of Indonesia University</span>
-                                    <div className="qualification__calendar">
-                                        <i className="uil uil-calendar-alt"></i> 2021 - Present
-                                    </div>
-                                </div>
-
-                                <div>
-                                    <span className="qualification__rounder"></span>
-                                    <span className="qualification__line"></span>
-                                </div>
-                            </div>
-
-                            <div className="qualification__data">
-                                <div></div>
-
-                                <div>
-                                    <span className="qualification__rounder"></span>
-                                    <span className="qualification__line"></span>
-                                </div>
-
-                                <div>
-                                    <h3 className="qualification__title">UX Expert</h3>
-                                    <span className="qualification__subtitle">Digital Technology of Indonesia University</span>
-                                    <div className="qualification__calendar">
-                                        <i className="uil uil-calendar-alt"></i> 2099 - 3000
-                                    </div>
+                            <div>
+                                <h3 className="qualification__title">Fullstack Developer</h3>
+                                <span className="qualification__subtitle">PT Sembilan Adi Perkasa</span>
+                                <div className="qualification__calendar">
+                                    <i className="uil uil-calendar-alt"></i> Oktober 2023 - Januari 2023
                                 </div>
                             </div>
                         </div>
 
-                        <div className={toggleState === 2 ? "qualification__content qualification__content-active" : "qualification__content"}>
-                            <div className="qualification__data">
-                                <div>
-                                    <h3 className="qualification__title">Odoo Developer</h3>
-                                    <span className="qualification__subtitle">PT Dua Empat Tujuh</span>
-                                    <div className="qualification__calendar">
-                                        <i className="uil uil-calendar-alt"></i> August - December 2023
-                                    </div>
-                                </div>
-
-                                <div>
-                                    <span className="qualification__rounder"></span>
-                                    <span className="qualification__line"></span>
+                        <div className="qualification__data">
+                            <div>
+                                <h3 className="qualification__title">Pekan Kreativitas Mahasiswa</h3>
+                                <span className="qualification__subtitle">Digital Technology of Indonesia University</span>
+                                <div className="qualification__calendar">
+                                    <i className="uil uil-calendar-alt"></i> Juny - Oktober 2023
                                 </div>
                             </div>
 
-                            <div className="qualification__data">
-                                <div></div>
+                            <div>
+                                <span className="qualification__rounder"></span>
+                                <span className="qualification__line"></span>
+                            </div>
+                        </div>
 
-                                <div>
-                                    <span className="qualification__rounder"></span>
-                                    <span className="qualification__line"></span>
-                                </div>
+                        <div className="qualification__data">
+                            <div></div>
 
-                                <div>
-                                    <h3 className="qualification__title">Fullstack Developer</h3>
-                                    <span className="qualification__subtitle">PT Sembilan Adi Perkasa</span>
-                                    <div className="qualification__calendar">
-                                        <i className="uil uil-calendar-alt"></i> Oktober 2023 - Januari 2023
-                                    </div>
-                                </div>
+                            <div>
+                                <span className="qualification__rounder"></span>
+                                <span className="qualification__line"></span>
                             </div>
 
-                            <div className="qualification__data">
-                                <div>
-                                    <h3 className="qualification__title">Pekan Kreativitas Mahasiswa</h3>
-                                    <span className="qualification__subtitle">Digital Technology of Indonesia University</span>
-                                    <div className="qualification__calendar">
-                                        <i className="uil uil-calendar-alt"></i> Juny - Oktober 2023
-                                    </div>
-                                </div>
-
-                                <div>
-                                    <span className="qualification__rounder"></span>
-                                    <span className="qualification__line"></span>
-                                </div>
-                            </div>
-
-                            <div className="qualification__data">
-                                <div></div>
-
-                                <div>
-                                    <span className="qualification__rounder"></span>
-                                    <span className="qualification__line"></span>
-                                </div>
-
-                                <div>
-                                    <h3 className="qualification__title">UX Expert</h3>
-                                    <span className="qualification__subtitle">Digital Technology of Indonesia University</span>
-                                    <div className="qualification__calendar">
-                                        <i className="uil uil-calendar-alt"></i> 2099 - 3000
-                                    </div>
+                            <div>
+                                <h3 className="qualification__title">UX Expert</h3>
+                                <span className="qualification__subtitle">Digital Technology of Indonesia University</span>
+                                <div className="qualification__calendar">
+                                    <i className="uil uil-calendar-alt"></i> 2099 - 3000
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-        </div>
+            </div>
+        </section>
     );
 }
 
